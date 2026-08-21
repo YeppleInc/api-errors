@@ -1,0 +1,43 @@
+{
+    "name": "@yeppleinc/api-errors",
+    "version": "1.0.0",
+    "description": "Versatile structure for API errors that can be used in any typescript server.",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/YeppleInc/api-errors.git"
+    },
+    "keywords": [
+        "typescript",
+        "api",
+        "errors"
+    ],
+    "author": "jshear",
+    "bugs": {
+        "url": "https://github.com/YeppleInc/api-errors/issues"
+    },
+    "homepage": "https://github.com/YeppleInc/api-errors#readme",
+    "devDependencies": {
+        "@changesets/cli": "^3.0.1",
+        "@types/node": "^26.2.0",
+        "tsup": "^8.5.1",
+        "typescript": "^5.8.2"
+    },
+    "scripts": {
+        "build": "tsup src/index.ts",
+        "changeset": "changeset",
+        "publish": "npm run build && changeset version && changeset publish"
+    },
+    "type": "module",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com"
+    },
+    "allowScripts": {
+        "esbuild@0.27.7": true,
+        "fsevents@2.3.3": true
+    }
+}
