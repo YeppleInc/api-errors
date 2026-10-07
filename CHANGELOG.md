@@ -1,5 +1,11 @@
 # @yeppleinc/api-errors
 
+## 1.0.2
+
+### Patch Changes
+
+- Fix errorCode in RateLimitError
+
 ## 1.0.1
 
 ### Patch Changes
