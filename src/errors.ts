@@ -111,7 +111,7 @@ export class RateLimitError extends APIError {
         super(
             opts?.status ?? 429,
             opts?.errorMessage ?? 'Too Many Requests',
-            opts?.errorCode ?? APIErrorCode.Duplicate,
+            opts?.errorCode ?? APIErrorCode.RateLimit,
             opts?.displayMessage ?? 'You have made too many attempts. Please try again later.'
         );
     }
