@@ -1,5 +1,11 @@
 # @yeppleinc/api-errors
 
+## 1.0.4
+
+### Patch Changes
+
+- Update parseError util to be server library agnostic
+
 ## 1.0.3
 
 ### Patch Changes
