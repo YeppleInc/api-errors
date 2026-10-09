@@ -1,5 +1,11 @@
 # @yeppleinc/api-errors
 
+## 1.0.3
+
+### Patch Changes
+
+- Add util for parsing an error from a server Response
+
 ## 1.0.2
 
 ### Patch Changes

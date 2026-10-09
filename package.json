@@ -1,6 +1,6 @@
 {
     "name": "@yeppleinc/api-errors",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Versatile structure for API errors that can be used in any typescript server.",
     "repository": {
         "type": "git",
