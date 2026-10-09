@@ -25,9 +25,10 @@ interface Response {
  *
  * @param resp the server Response containing a potential APIError
  * @returns the APIError (as an instance of the appropriate sub-class) represented in the Response if it exists, otherwise undefined
+ * @throws an Error if the Response was successful (ok = true)
  */
-export async function parseError(resp: Response): Promise<APIError | undefined> {
-    if (resp.ok) return undefined;
+export async function parseError(resp: Response): Promise<APIError> {
+    if (resp.ok) throw new Error('Error parsing is not supported for a successful Response (ok = true)');
 
     const body = (await resp.json().catch(() => {
         // The error response did not contain any JSON content

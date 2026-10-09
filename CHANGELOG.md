@@ -1,5 +1,11 @@
 # @yeppleinc/api-errors
 
+## 1.0.5
+
+### Patch Changes
+
+- Add error handling for error parsing
+
 ## 1.0.4
 
 ### Patch Changes
