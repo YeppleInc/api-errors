@@ -108,12 +108,7 @@ export class DuplicateError extends APIError {
 
 export class RateLimitError extends APIError {
     constructor(opts?: ErrorOptions) {
-        super(
-            opts?.status ?? 429,
-            opts?.errorMessage ?? 'Too Many Requests',
-            opts?.errorCode ?? APIErrorCode.RateLimit,
-            opts?.displayMessage ?? 'You have made too many attempts. Please try again later.'
-        );
+        super(opts?.status ?? 429, opts?.errorMessage ?? 'Too Many Requests', opts?.errorCode ?? APIErrorCode.RateLimit, opts?.displayMessage, opts?.content);
     }
 }
 

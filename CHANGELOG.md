@@ -1,5 +1,11 @@
 # @yeppleinc/api-errors
 
+## 1.0.6
+
+### Patch Changes
+
+- RateLimitError - pass content to super constructor
+
 ## 1.0.5
 
 ### Patch Changes
